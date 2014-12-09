@@ -168,6 +168,6 @@ defmodule OtpDsl.Genserver do
   def name_from(module_name) do
     Regex.replace(~r{(.)\.?([A-Z])}, inspect(module_name), "\\1_\\2")
     |> String.downcase
-    |> binary_to_atom
+    |> String.to_atom
   end
 end

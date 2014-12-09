@@ -43,10 +43,12 @@ defmodule OtpDsl.Genfsm do
       _ -> quote do { unquote_splicing(params)} end
     end
 
-    quote hygiene: [vars: false ] do
-      def unquote(state)(unquote(params), context) do
-        unquote(action)
-      end
+    quote do
+      var!(
+        def unquote(state)(unquote(params), context) do
+          unquote(action)
+        end
+      )
     end
   end
 

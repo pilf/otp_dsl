@@ -1,3 +1,6 @@
+_build/
+lib/otp_dsl/.genserver.ex.swp
+mix.lock
 /ebin
 /deps
 erl_crash.dump
