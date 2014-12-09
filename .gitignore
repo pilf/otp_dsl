@@ -4,5 +4,6 @@ mix.lock
 /ebin
 /deps
 erl_crash.dump
+.mix.exs.swp
 *.ez
 *~
